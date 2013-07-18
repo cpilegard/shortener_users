@@ -1,0 +1,14 @@
+<div class="container">
+  <form action="/urls" method="POST">
+    Enter your URL:
+    <br>
+    <input type="text" name="long_url">
+    <input type="submit" value="Shrink!">
+  </form>
+  <br>
+  <% if @errors %>
+    <p> <%= @errors %>
+  <% elsif @short_url %>
+    <p> <%= @short_url %> </p>
+  <% end %> 
+</div>
